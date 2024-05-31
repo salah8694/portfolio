@@ -1,0 +1,639 @@
+@font-face {
+  font-family: 'Mplus2';
+  src: url('./assets/font/M_PLUS_2/MPLUS2-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('./assets/font/Geist-1.3.0/statics-ttf/Geist-Light.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Ruge';
+  src: url('./assets/font/Ruge/RugeBoogie-Regular.ttf') format('truetype');
+}
+
+
+:root{
+  background: linear-gradient(0deg,#FFFFFF 0%,#FFFFFF 20%);
+  width: 100%;
+  min-height: auto;
+  max-height: auto;
+  display: flex;
+  overflow: auto;
+  background-image: url(./assets/images/grid.png.png);
+  background-color: #242424;
+}
+header{
+  opacity: 1;
+  text-align: center;
+  align-items: center;
+  display:flex;
+  
+}
+
+
+nav h1{
+  color:#eeeeee;
+  font-family: 'Geist';
+  font-size: 26px;
+  margin-left: 10px;
+  background-color: #242424;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  margin-right: 40%;
+  
+
+}
+nav h1:hover{
+  color:#eeeeee;
+  font-family: 'Geist';
+  font-size: 26px;
+  margin-left: 10px;
+  opacity: 0.5;
+  
+
+}
+
+@keyframes opaciteAlternante {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body{
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  display: flex;
+  max-width: 100%;
+  min-height: auto;
+  max-height: auto;
+  overflow: auto;
+  cursor:none;
+  background-repeat: repeat;
+}
+
+h1 span{
+
+  font-family: 'Mplus2';
+  font-size: 30px;
+  color:#eeeeee;
+  margin-left: 5px;
+  margin-right: 5px;
+  animation: opaciteAlternante 1500ms infinite;
+
+}
+main{
+  overflow: fixed;
+  width: 100%;
+  height: auto;
+  display: grid;
+  position: absolute;
+  top:20vh;
+  left: 0;
+}
+
+main h1{
+  color: aliceblue;
+}
+
+a{
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  color: #eeeeee;
+  padding: 10px;
+  font-family: 'Geist';
+  font-size: larger;
+  background-color: #000000;
+  border-radius: 0px;
+  margin-left: 5px;
+  height: 25px;
+  
+  
+}
+a:hover{
+  text-decoration: none;
+  color: #eeeeee;
+  padding: 10px;
+  font-family: 'Geist';
+  font-size: larger;
+  color: #eeeeee;
+  border-left: #eeeeee solid 1px;
+  border-right: #eeeeee solid 1px;
+  border-bottom: #eeeeee solid 1px;
+  border-top: #eeeeee solid 1px;
+  background-color: #000000;
+  border-radius: 5px;
+}
+#quote{
+  font-size:44px;
+  line-height:50px;
+  color:#dedede;
+}
+nav{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 20vh;
+  right: 0px;
+  top: 0px;
+  margin-right: 0px;
+  border-top: #eeeeee solid 0px;
+  border-left: #eeeeee dotted 0px;
+  border-bottom: #eeeeee dotted 0px;
+  background-color: #000000;
+  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px 0px 0px 5px;
+  font-size:medium;
+  align-items: center;
+  text-align: right;
+
+}
+
+.pingouin{
+margin-left: 5px;
+}
+
+.home{
+  color: aliceblue;
+  font-family: "Geist";
+  font-size: xx-large;
+}
+
+
+
+.sizeM{
+  position: relative;
+  right: 10px;
+  box-shadow:'inset 0px 0px 10px #FFF';
+
+}  
+
+footer{
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 200px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#presentation {
+  padding: 25px;
+  padding-bottom: 5px;
+  font-family: 'Geist';
+  font-weight: 800;
+  font-size: 30px;
+  text-shadow: 20px 10px #000000;
+  text-align: left;
+  --color: #9adef3; /* Définir une couleur par défaut */
+  --color2: #0add0a; /* Définir une autre couleur par défaut */
+  z-index: 2;
+}
+
+#comment {
+  padding: 40px;
+  padding-top: 5px;
+  font-family: 'Geist';
+  font-style: italic;
+  font-weight: 800;
+  font-size: 15px;
+  text-shadow: 20px 10px #000000;
+  text-align: left;
+  --color: #9adef3; /* Définir une couleur par défaut */
+  --color2: #0add0a; /* Définir une autre couleur par défaut */
+  z-index: 2;
+  width: 300px;
+}
+
+#name {
+  padding: 25px;
+  font-family: 'Geist';
+  font-weight: 800;
+  font-size: 60px;
+  text-shadow: 20px 10px #000000;
+  text-align: left;
+  --color: #9adef3; /* Définir une couleur par défaut */
+  --color2: #0add0a; /* Définir une autre couleur par défaut */
+  z-index: 2;
+}
+
+#competence {
+  background: linear-gradient(to bottom, #00000000 0%,#000000 30%, #000000 90%, #00000000 100%);
+  color:#eeeeee;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  padding-left: 25px;
+  margin-top: 336px;
+  font-family: 'Geist';
+  font-weight: 800;
+  font-size: 60px;
+  text-shadow: 20px 10px #000000;
+  text-align: left;
+  z-index: 2;
+}
+
+#experience {
+  color:#eeeeee;
+  padding: 25px;
+  width: 90%;
+  font-family: 'Geist';
+  font-weight: 800;
+  font-size: 60px;
+  text-shadow: 20px 10px #000000;
+  text-align: left;
+  z-index: 2;
+  padding-left: 25px;
+  padding-bottom: 0px;
+  
+}
+#projets {
+  color:#eeeeee;
+  padding: 25px;
+  width: 90%;
+  font-family: 'Geist';
+  font-weight: 800;
+  font-size: 60px;
+  text-shadow: 20px 10px #000000;
+  text-align: left;
+  z-index: 2;
+  padding-left: 25px;
+  padding-bottom: 0px;
+  
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+}
+
+#presentation span{
+  font-size: 100px;
+  padding-right:0px;
+  padding-left: 0px;
+  font-style: italic;
+
+
+}
+
+#text{
+  font-family: 'Geist';
+  padding-top: 10px;
+  width:40%;
+  height: auto;
+  padding-left: 50px;
+  font-family: 'Geist';
+  font-size: medium;
+  color: #ffffff;
+  text-shadow: 20px 10px #000000;
+  text-align: justify;
+}
+
+.corps{
+  display:grid;
+  grid-template-columns: 1fr ;
+  padding: 10px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  margin: 0px;
+  margin-left: 0%;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(180deg, #000000 0%, #000000 54%, #00000000 100%);
+
+}
+
+#container{
+  width: 45%;
+  margin-right: 50px;
+  height: 35vh;
+  position: absolute;
+  right: 0;
+  padding: 30px;
+  background-color: #19171c;
+  border-radius: 5px 5px 5px 5px ;
+  border: 1px solid #3d3b3b ;
+  animation: box-shadow duration timing-function delay iteration-count direction fill-mode;
+  overflow:scroll;
+  overflow-x: hidden;
+}
+
+.container1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.light {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(0,0,0,0.5) 100%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.torch {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%);
+  pointer-events: none;
+}
+
+.corpsRight{
+  display:grid;
+  grid-template-columns: 1fr ;
+  padding: 50px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  margin: 0px;
+  margin-left: 0%;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(180deg, #000000 0%, #000000 54%, #00000000 100%);
+  width: 50%;
+  height: 35vh;
+  opacity: 0.7;
+  z-index: 5;
+
+}
+#smd{
+  position:absolute;
+  background-image: url(./assets/images/smd.svg) ,linear-gradient(240deg, #000000 0%, #00000099 75%);
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0px;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.code-editor {
+  display: flex;
+  font-family: monospace;
+  background-color: #00000000;
+}
+
+.line-numbers {
+  padding: 0 10px;
+  border-right: 1px dotted #0a0202;
+  background-color: #f7f7f700;
+}
+
+.line-numbers span {
+  display: block;
+  padding: 5px 0;
+}
+
+.code {
+  padding: 0 10px;
+}
+
+.line {
+  display: block;
+  white-space: pre;
+}
+
+/* Ajout du style pour les numéros de lignes */
+.line-number {
+  color: #888;
+  user-select: none; /* Empêche la sélection des numéros de ligne */
+}
+
+
+
+.cursor {
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #EEEEEE11 10%, #eeeeee55 100%);
+  pointer-events: none; /* Assurez-vous que le curseur n'interfère pas avec les événements de la souris */
+  transition: transform 0.1s ease; /* Ajoutez une transition pour une animation fluide */
+  z-index: 9999; /* Assurez-vous que le curseur est au-dessus de tous les autres éléments */
+  box-shadow: 0px 0px 50px 10px #eeeeee;
+
+}
+
+.cursor.show {
+  transform: translate(-50%, -50%); /* Déplacez le curseur pour qu'il soit au centre de la souris */
+  animation: alternate;
+}
+
+
+#node{
+  background-image: url(./assets/images/node.png) ;
+  width: 150px;
+  height: 150px;
+  background-color: #42424200;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+
+#vite{
+  width: 150px;
+  height: 150px;
+  background-color: #42424233;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#react{
+  width: 150px;
+  height: 150px;
+  background-image: url(./assets/images/react.png) ;
+  background-color: #42424200;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#postgresql{
+  background-image: url(./assets/images/postgresql.png);
+  width: 150px;
+  height: 150px;
+  background-color: #42424200;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#mongo{
+  background-image: url(./assets/images/mongo.png);
+  width: 150px;
+  height: 150px;
+  background-color: #42424200;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#apache{
+  background-image: url(./assets/images/apache.png) ;
+  width: 150px;
+  height: 150px;
+  background-color: #42424200;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#angular{
+  background-image: url(./assets/images/angular.png) ;
+  width: 150px;
+  height: 150px;
+  background-color: #42424200;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#css{
+  width: 150px;
+  height: 150px;
+  background-color: #42424233;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#vite{
+  background-image: url(./assets/images/vitejs.png) ;
+  width: 150px;
+  height: 150px;
+  background-color: #42424200;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#python{
+  background-image: url(./assets/images/python.png) ;
+  width: 150px;
+  height: 150px;
+  background-color: #42424200;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#django{
+  background-image: url(./assets/images/djangoLogo.png) ;
+  width: 150px;
+  height: 150px;
+  background-color: #42424200;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#djangoRestful{
+
+  width: 150px;
+  height: 150px;
+  background-color: #42424233;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.container2{
+  display: grid;
+  background-image: url(./assets/images/container.svg) ,linear-gradient(240deg, #000000 0%, #00000099 75%);
+  background-repeat: no-repeat;
+  background-origin:border-box ;
+  width: 100%;
+  height: auto;
+  justify-items: center;
+  padding-bottom: 0vh;
+  padding-top: 50px;
+  
+
+  
+}
+
+.container3{
+  display: grid;
+  background:linear-gradient(240deg, #000000 0%, #00000099 75%);
+  background-repeat: no-repeat;
+  background-origin:border-box ;
+  height: auto;
+  justify-items: left;
+  padding-bottom: 0vh;
+  padding-top: 0px;
+  
+
+  
+}
+.container4{
+  display: grid;
+  background:linear-gradient(240deg, #000000 0%, #00000099 75%);
+  background-repeat: no-repeat;
+  background-origin:border-box ;
+  height: auto;
+  justify-items: left;
+  padding-bottom: 5vh;
+  padding-top: 0px;
+  
+
+  
+}
+
+.contain{
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  align-items: center;
+  justify-items: center;
+  background-color: #eeeeee11;
+  border-radius: 10px;
+  border: #3d3b3b dotted 3px;
+  margin-bottom: 200px;
+}
+
+.download{
+  width: 150px;
+  height: 50px;
+  font-family: 'Geist';
+  font-size: x-large;
+  background-color: #111111;
+  border-radius: 1px;
+  position: absolute;
+  right: 0;
+  margin: 50px;
+  color:#eeeeee;
+  border: #333333 dotted 2px;
+}
+
+.download:hover{
+  width: 150px;
+  height: 50px;
+  font-family: 'Geist';
+  font-size: x-large;
+  background-color: #111111;
+  border-radius: 1px;
+  position: absolute;
+  right: 0;
+  margin: 50px;
+  color:#333333;
+  border: #111111 dotted 2px;
+}
+

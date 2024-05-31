@@ -1,0 +1,78 @@
+/* Override some default styles for react-responsive-carousel */
+.carousel .slide {
+    background: none;
+  }
+  
+  /* Style the main image */
+  .carousel .slide img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Adjust based on your design */
+    object-fit: cover;
+    border-radius: 10px;
+
+  }
+  
+  /* Style the arrows */
+  .carousel .control-arrow {
+    background: rgba(0, 123, 255, 0.5);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    transition: background 0.3s ;
+  }
+  
+  .carousel .control-arrow:hover {
+    background: rgba(0, 86, 179, 0.7);
+    border-radius: 10px;
+  }
+  
+  /* Position the arrows */
+  .carousel .control-prev.control-arrow {
+    left: 15px;
+  }
+  
+  .carousel .control-next.control-arrow {
+    right: 15px;
+  }
+  
+  /* Style the indicators (pagination dots) */
+  .carousel .control-dots .dot {
+    background: #007bff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: opacity 0.3s;
+  }
+  
+  .carousel .control-dots .dot.selected {
+    background: #0056b3;
+  }
+  
+  /* Hide the status text (1/5) */
+  .carousel .carousel-status {
+    display: none;
+  }
+  
+  /* Hide the default thumb styles */
+  .carousel .thumbs-wrapper {
+    display: none;
+  }
+  .projet{
+    
+    padding: 50px;
+    margin: 50px;
+    width: auto;
+    min-height:60vh ;
+    background: url(../../assets/images/grid.png.png),#666666;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: inset 10px 10px 100px #00000080;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+  }

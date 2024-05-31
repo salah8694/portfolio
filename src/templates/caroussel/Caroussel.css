@@ -1,0 +1,35 @@
+.caroussel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.caroussel img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caroussel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 123, 255, 0.7);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.caroussel button:hover {
+  background-color: rgba(0, 86, 179, 0.7);
+}
+
+.caroussel button:first-of-type {
+  left: 10px;
+}
+
+.caroussel button:last-of-type {
+  right: 10px;
+}

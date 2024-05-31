@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'Geist';
+    src: url('../../assets/font/Geist-1.3.0/statics-ttf/Geist-Light.ttf') format('truetype');
+  }
+
+tbody{
+  height: 200px;
+  overflow: scroll;
+}
+
+
+form{
+    color:#FFF;
+    background-color: #00000099;
+    width: 25%;
+    padding: 20px;
+    font-family: 'Geist';
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+
+
+.avisR{
+    color:#FFF;
+    background:url(../../assets/images/grid.png.png), #333333;
+    width: 70%;
+    height: auto;
+    max-height: 70vh;
+    padding: 1px;
+    font-family: 'Geist';
+    display: grid;
+    margin-left: 20px;
+    border-radius: 0px 10px 10px 0px;
+    overflow: scroll;
+    border-bottom: #000000 solid 10px;
+    border-top: #000000 solid 10px;
+
+}
+.avisR h1{
+    padding-left: 10px;
+}
+.avisR p{
+  padding-left: 10px;
+}
+
+label{
+    color:#FFF;
+
+}
+
+#nom{
+    width: 350px;
+    background-color: #00000099;
+    color: #FFF;
+    border: 1px solid #333;
+    border-radius: 0px 0px 0px 0px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+#email{
+    width: 350px;
+    background-color: #00000099;
+    color: #FFF;
+    border: 1px solid #333;
+    border-radius: 0px 0px 0px 0px;
+    padding: 10px;
+    margin: 10px;
+
+}
+#rating{
+    min-width: 500px;
+    background-color: #00000099;
+    color: #FFF;
+    border: 1px dotted #FFF;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#commentaire{
+    min-height: 100px;
+    min-width: 350px;
+    background-color: #00000099;
+    color: #FFF;
+    border: 1px solid #333;
+    border-radius: 0px 0px 0px 0px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.avisItem{
+    display: flex;
+}
+
+.Avis{
+    background: url(../../assets/images/grid.png.png),#222222;
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+    min-width: 91%;
+    border-radius: 10px;
+    display: flex;
+    flex-flow:row;
+    }
+
+.avisList{
+    display: grid;
+    height: 200px;
+
+    
+}
+
+.rating {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+.rating-display {
+    display: flex;
+    align-items: center;
+  }  
+  
+.circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background:url(../../assets/images/reseaux/start.png), #22222200;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: #000000 solid 1px;
+  }
+  
+  .circle.selected {
+    background-color: #d9ff00;
+    border: #000000 solid 1px;
+ 
+  }
+  
+  .circle:hover {
+    background-color: #d9ff00;
+  }
+
+
+  button{
+    background-color: #11111111;
+    color: #FFF;
+    width: 370px;
+    height: 50px;
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 10px;
+    justify-items: center;
+    align-items: center;
+
+
+  }
+  button:hover{
+    background-color: #00000055;
+    color: #FFF;
+    width: 370px;
+    height: 50px;
+    border: 1px solid #111;
+    padding: 10px;
+    margin: 10px;
+    justify-items: center;
+    align-items: center;
+
+
+  }
+
+
+
+ 
+.tableau{
+    display: flex;
+    flex-direction:row;
+    margin-left: 1px;
+    margin-right: 1px;
+    height: 200px;
+
+
+
+}
+
+
+.N{
+    width: 150px;
+    height: 20px;
+    background-color: #FFFFFF11;
+    color: #FFF;
+    font-family: 'Geist';
+    font-size: 15px;
+    border: #111 solid 1px;
+    text-align: left;
+    padding-left: 10px;
+
+}
+
+.C{
+    width: 450px;
+    height: 20px;
+    background-color: #FFFFFF11;
+    color: #FFF;
+    font-family: 'Geist';
+    font-size: 15px;
+    border: #111 solid 1px;
+    text-align: left;
+    padding-left: 10px;
+
+    
+
+}
+
+.R{
+    width: 100%;
+    height: 20px;
+    background-color: #000000;
+    color: #111;
+    font-family: 'Geist';
+    font-size: 15px;
+    border: #111 solid 1px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+
+}
+
+#position{
+  position:relative;
+  padding-left: 20px;
+
+  
+}
+
+table{
+  color:#FFF;
+  margin:10px;
+  padding :5px;
+  background-color: #11111122;
+  box-shadow: inset 0 0 200px #00000080;
+  overflow:scroll;
+  width: 100%;
+  position:relative;
+  height: 200px;
+}
+table td{
+  border: 1px dotted #FFF;
+  color:#FFF;
+}
+
+table tr th{
+  border: 1px dotted #FFF;
+  height: 10px;
+  color: #FFF;
+  background-color: #000000;
+}
+
+
+
